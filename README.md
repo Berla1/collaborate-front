@@ -1,8 +1,3 @@
-# React + Vite
+# Collaborate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## O collaborate é o lugar onde você pode se conectar com pessoas e colaborar para um projeto em conjunto. O objetivo é poder desenvolver porjetos grandes e aprender com eles, podendo usa-los de portifólio ou até um ponto de partida inicial para criar sua empresa!
