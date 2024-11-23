@@ -26,30 +26,31 @@ const Home = () => {
         <img src={Saly} alt="" />
       </section>
 
-      <section className="">
+      <section className="flex flex-col gap-8">
         <h2 className=" flex items-center justify-center gap-8 text-[64px] text-white font-bold">
           O que é o <span className="text-[#FF7837]">Collaborate</span>
         </h2>
+
         <div className="flex items-center ml-[153px]">
           <img src={Joia} alt="" />
           <div style={{ width: "241px" }}></div>
-          <p className="w-[636px] h-[200px] text-[30px] text-white font-bold ">
+          <p className="w-1/2 text-[30px] text-white font-medium ">
             É uma plataforma que une pessoas com habilidades técnicas distintas
             a fim de colaborar para um projeto que pode ser usado para <span  className="text-[#FF7837]">aprender
             tecnologias</span> ou como <span  className="text-[#FF7837]">portfólio</span>.
           </p>
         </div>
-        <div className="flex ml-[29px]">
-          <p className=" w-[667px] h-[280px] text-[30px] text-white font-bold ">
+
+        <div className="flex w-full gap-40">
+          <p className="text-[30px] text-white font-medium w-1/2">
           O <span className="text-[#FF7837]">Collaborate</span> nasceu quando percebemos que contribuir para grandes projetos é essencial para aprender novas tecnologias e conhecer pessoas, mas enfrentávamos o <span className="text-[#FF7837]">medo</span> de não dominar certas habilidades e a <span className="text-[#FF7837]">dificuldade de encontrar pessoas</span> para colaborar.
           </p>
-          <div style={{ width: "146px" }}></div>
           <img src={Play} alt="" />
         </div>
         <div className="flex items-center ml-[153px]">
           <img src={Chat} alt="" />
           <div style={{ width: "241px" }}></div>
-          <p className="w-[595px] h-[200px] text-[30px] text-white font-bold ">
+          <p className="w-1/2 text-[30px] text-white font-medium ">
             Aqui você pode aprender junto com outras pessoas enquanto cria <span className="text-[#FF7837]">projetos reais</span>, ou até mesmo tirar aquela ideia do papel! <span className="text-[#FF7837]">E ai ta pronto para colaborar?</span>
           </p>
         </div>
