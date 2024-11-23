@@ -4,6 +4,7 @@ import Saly from "../../assets/saly-38.svg";
 import Joia from "../../assets/joia-3d.svg";
 import Play from "../../assets/play-3d.svg";
 import Chat from "../../assets/chat-3d.svg";
+import SobreNos from "../../components/SobreNos";
 
 const Home = () => {
   return (
@@ -54,6 +55,7 @@ const Home = () => {
             Aqui você pode aprender junto com outras pessoas enquanto cria <span className="text-[#FF7837]">projetos reais</span>, ou até mesmo tirar aquela ideia do papel! <span className="text-[#FF7837]">E ai ta pronto para colaborar?</span>
           </p>
         </div>
+        <SobreNos/>
       </section>
     </>
   );
