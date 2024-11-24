@@ -2,7 +2,7 @@ import Nav from "../../components/Nav";
 import SobreNos from "../Home/SobreNos";
 import Landing from "../Home/Landing";
 import OCollaborate from "../Home/OCollaborate";
-import Entrar from "../../components/Entrar";
+import Entrar from "./Entrar";
 import Footer from "../../components/Footer";
 
 const Home = () => {
