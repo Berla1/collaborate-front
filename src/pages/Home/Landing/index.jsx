@@ -1,5 +1,5 @@
-import Botao from "../Botao";
-import Saly from "../../assets/saly-38.svg";
+import Botao from "../../../components/Botao";
+import Saly from "../../../assets/saly-38.svg";
 
 const Landing = () => {
   return (

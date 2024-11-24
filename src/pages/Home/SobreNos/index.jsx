@@ -1,7 +1,7 @@
-import Berla from "../../assets/foto-berla.svg";
-import Vinicius from "../../assets/foto-vinicius.svg";
-import Linkedin from "../../assets/icon-linkedin.svg";
-import Github from "../../assets/icon-github.svg";
+import Berla from "../../../assets/foto-berla.svg";
+import Vinicius from "../../../assets/foto-vinicius.svg";
+import Linkedin from "../../../assets/icon-linkedin.svg";
+import Github from "../../../assets/icon-github.svg";
 
 const SobreNos = () => {
   return (

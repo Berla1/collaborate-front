@@ -1,6 +1,6 @@
-import Joia from "../../assets/joia-3d.svg";
-import Play from "../../assets/play-3d.svg";
-import Chat from "../../assets/chat-3d.svg";
+import Joia from "../../../assets/joia-3d.svg";
+import Play from "../../../assets/play-3d.svg";
+import Chat from "../../../assets/chat-3d.svg";
 
 const OCollaborate = () => {
     return (  

@@ -24,7 +24,7 @@ const Input = () => {
       
       <input
         type="text"
-        placeholder="insira seu email"
+        placeholder="Insira seu email"
         className="flex-1 bg-[#292524] text-white text-base outline-none border-none pl-3 max-w-[170px]"
       />
 
