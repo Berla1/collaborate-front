@@ -1,14 +1,15 @@
-import Logo from "../../assets/logo-grande.svg";
+import { Link } from "react-router-dom";
+import Logo from '../../assets/landing/logo-grande.svg'
 import Botao from "../Botao";
 
 const Nav = () => {
   return (
     <nav className="flex justify-between">
-      <a href="#">
+      <Link to={'/'}>
         <img src={Logo} alt="Logo" />
-      </a>
+      </Link>
       <div className="flex gap-3">
-        <Botao text={"Entrar"} textColor={"#FF7837"}/>
+        <Link to={'/login'}><Botao text={"Entrar"} textColor={"#FF7837"}/></Link> 
         <Botao text={"Cadastrar"} bgColor={"#FF7837"} textColor={"white"}/>
       </div>
     </nav>

@@ -1,7 +1,9 @@
 import Nav from "../../components/Nav";
-import SobreNos from "../../components/SobreNos";
-import Landing from "../../components/Landing";
-import OCollaborate from "../../components/OCollaborate";
+import SobreNos from "../Home/SobreNos";
+import Landing from "../Home/Landing";
+import OCollaborate from "../Home/OCollaborate";
+import Entrar from "./Entrar";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
@@ -14,6 +16,10 @@ const Home = () => {
       <OCollaborate />
     </main>
       <SobreNos />
+      <Entrar/>
+      <footer>
+        <Footer/>
+      </footer>
     </>
   );
 };
