@@ -1,9 +1,20 @@
 import Botao from "../../components/Botao";
-import Google from "../../assets/redes/google.svg"
-import Facebook from "../../assets/redes/facebook.svg"
-import Github from "../../assets/redes/github.svg"
+import Google from "../../assets/login/redes/google.svg";
+import Facebook from "../../assets/login/redes/facebook.svg";
+import Github from "../../assets/login/redes/github.svg";
+import Foguetinho from "../../assets/login/foguetinho.svg";
+import { FaRegEye } from "react-icons/fa";
+import { FaRegEyeSlash } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Login = () => {
+  const [toggle, useToggle] = useState(false);
+
+  function togglePassord() {
+    useToggle(!toggle);
+  }
   return (
     <>
       <section className="flex items-center h-screen px-20 text-white ">
@@ -31,23 +42,50 @@ const Login = () => {
                 className="rounded-xl py-4 px-3 bg-[#535353] placeholder-[#939393] w-[400px] outline-none"
               />
               <input
-                type="password"
+                type={toggle ? "text" : "password"}
                 placeholder="Senha"
                 className="rounded-xl py-4 px-3 bg-[#535353] placeholder-[#939393] w-[400px] outline-none"
               />
+              {toggle ? (
+                <FaRegEye
+                  color="#FF7837"
+                  onClick={togglePassord}
+                  className="cursor-pointer absolute right-48 top-80"
+                />
+              ) : (
+                <FaRegEyeSlash
+                  color="#FF7837"
+                  onClick={togglePassord}
+                  className="cursor-pointer absolute right-48 top-80"
+                />
+              )}
             </div>
             <span className="text-[#FF7837] hover:underline mt-2 mb-10 flex justify-end text-sm">
               Esqueceu sua senha?
             </span>
             <Botao bgColor={"#FF7837"} text={"Entrar"} textColor={"white"} />
-            <p className="text-[#939393] flex justify-center py-10">ou continue com</p>
+            <p className="text-[#939393] flex justify-center py-10">
+              ou continue com
+            </p>
             <div className="flex justify-center gap-9">
-                <img src={Google} alt="Logo Google" className="cursor-pointer"/>
-                <img src={Facebook} alt="Logo Facebook" className="cursor-pointer"/>
-                <img src={Github} alt="Logo GitHub" className="cursor-pointer"/>
+              <img src={Google} alt="Logo Google" className="cursor-pointer" />
+              <img
+                src={Facebook}
+                alt="Logo Facebook"
+                className="cursor-pointer"
+              />
+              <img src={Github} alt="Logo GitHub" className="cursor-pointer" />
             </div>
           </form>
         </div>
+        <Link to={"/"} className="absolute top-14 hover:animate-pulse">
+          <FaArrowLeft color="#FF7837" size={35} />
+        </Link>
+        <img
+          src={Foguetinho}
+          alt=""
+          className="absolute left-[32%] bottom-0 w-[30%]"
+        />
       </section>
     </>
   );

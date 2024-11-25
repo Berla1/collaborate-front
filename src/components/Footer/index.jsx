@@ -1,10 +1,10 @@
-import X from "../../assets/icon-x.svg";
-import Facebook from "../../assets/icon-facebook.svg";
-import Linkedin from "../../assets/icon-linkedin2.svg";
-import Youtube from "../../assets/icon-youtube.svg";
-import Twitch from "../../assets/icon-twitch.svg";
-import Tiktok from "../../assets/icon-tiktok.svg";
-import Github from "../../assets/icon-github2.svg";
+import X from "../../assets/footer/icon-x.svg";
+import Facebook from "../../assets/footer/icon-facebook.svg";
+import Linkedin from "../../assets/footer/icon-linkedin2.svg";
+import Youtube from "../../assets/footer/icon-youtube.svg";
+import Twitch from "../../assets/footer/icon-twitch.svg";
+import Tiktok from "../../assets/footer/icon-tiktok.svg";
+import Github from "../../assets/footer/icon-github2.svg";
 
 const Footer = () => {
   return (

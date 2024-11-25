@@ -1,5 +1,7 @@
 import Botao from "../../../components/Botao";
-import Saly from "../../../assets/saly-38.svg";
+import Saly from '../../../assets/landing/saly-38.svg'
+import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
+
 
 const Landing = () => {
   return (
@@ -21,7 +23,11 @@ const Landing = () => {
         />
       </div>
       <img src={Saly} alt="" />
+      <MdOutlineKeyboardDoubleArrowDown className="absolute left-1/2 bottom-10 animate-bounce" size={50} color="#FF7837"/>
+
+
     </section>
+    
   );
 };
 
