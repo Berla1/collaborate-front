@@ -1,5 +1,4 @@
-
-const Input = () => {
+const InputEntrar = () => {
   return (
     <div className="flex items-center bg-[#292524] rounded-full w-fit h-[45px] p-2">
       
@@ -45,5 +44,5 @@ const Input = () => {
   );
 };
 
-export default Input;
+export default InputEntrar;
 
