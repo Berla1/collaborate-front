@@ -3,6 +3,7 @@ import Google from "../../assets/login/redes/google.svg";
 import Facebook from "../../assets/login/redes/facebook.svg";
 import Github from "../../assets/login/redes/github.svg";
 import Foguetinho from "../../assets/login/foguetinho.svg";
+import LogoMenor from '../../assets/login/logo-menor.png'
 import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
@@ -18,29 +19,32 @@ const Login = () => {
 
   return (
     <>
-      <section className="flex items-center h-screen px-20 text-white ">
+      <section className="flex flex-col items-center justify-center h-full py-8 text-white gap-10 lg:h-screen lg:flex-row ">
+        <img className="w-[50px] lg:hidden" src={LogoMenor} alt="" />
+
         <div className="flex flex-col gap-5">
-          <h1 className=" text-[64px] w-3/4 font-bold leading-tight">
+          <h1 className="text-2xl font-bold items-center justify-center lg:text-[64px] lg:w-3/4 lg:leading-tight">
             Bem vindo ao <span className="text-[#FF7837]">Collaborate</span>
           </h1>
-          <h2 className="text-2xl w-2/5">
+          <h2 className="text-sm text-center lg:text-2xl lg:w-2/5 lg:text-left">
             Por favor faça o login para acessar sua conta
           </h2>
-          <h3 className="mt-6">
+          <h3 className="mt-6 hidden lg:block">
             Não tem uma conta?{" "}
             <a href="#" className="text-[#FF7837] hover:underline">
               Registre-se
             </a>
           </h3>
         </div>
+
         <div>
           <form className="flex flex-col ">
-            <h2 className="text-[48px] font-bold mb-5">Entrar</h2>
+            <h2 className="text-[48px] font-bold mb-5 hidden lg:block">Entrar</h2>
             <div className="flex flex-col gap-5 ">
               <input
                 type="text"
                 placeholder="Nome de usuário"
-                className="rounded-xl py-4 px-3 bg-[#535353] placeholder-[#939393] w-[400px] outline-none"
+                className="rounded-xl py-4 px-3 bg-[#535353] placeholder-[#939393] w-[300px] outline-none lg:w-[400px]"
               />
               <div className="relative">
                 <input
@@ -81,14 +85,15 @@ const Login = () => {
             </div>
           </form>
         </div>
-        <Link to={"/"} className="absolute top-14 hover:animate-pulse">
-          <FaArrowLeft color="#FF7837" size={35} />
-        </Link>
+
         <img
           src={Foguetinho}
           alt=""
-          className="absolute left-[32%] bottom-0 w-[30%]"
+          className="absolute left-[32%] bottom-0 w-[30%] hidden lg:block"
         />
+        <h3 className="text-[#939393] lg:hidden">
+          Não tem uma conta? <Link className="text-[#FF7837] hover:underline" to={'/register'}>Registre-se</Link>
+        </h3>
       </section>
     </>
   );
