@@ -11,7 +11,7 @@ const InputLogin = ({ toggleType, placeholder }) => {
   return (
     <div className="relative">
       <input
-        type={toggle ? "text" : "password"}
+        type={toggle || toggleType == 'none' ? "text" : "password"}
         placeholder={placeholder}
         className="rounded-xl py-4 px-3 bg-[#535353] placeholder-[#939393]  outline-none w-[300px] lg:w-[400px]"
       />
