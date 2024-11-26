@@ -15,6 +15,7 @@ const Login = () => {
   function togglePassord() {
     useToggle(!toggle);
   }
+
   return (
     <>
       <section className="flex items-center h-screen px-20 text-white ">
@@ -41,24 +42,26 @@ const Login = () => {
                 placeholder="Nome de usuário"
                 className="rounded-xl py-4 px-3 bg-[#535353] placeholder-[#939393] w-[400px] outline-none"
               />
-              <input
-                type={toggle ? "text" : "password"}
-                placeholder="Senha"
-                className="rounded-xl py-4 px-3 bg-[#535353] placeholder-[#939393] w-[400px] outline-none"
-              />
-              {toggle ? (
-                <FaRegEye
-                  color="#FF7837"
-                  onClick={togglePassord}
-                  className="cursor-pointer absolute right-48 top-80"
+              <div className="relative">
+                <input
+                  type={toggle ? "text" : "password"}
+                  placeholder="Senha"
+                  className="rounded-xl py-4 px-3 bg-[#535353] placeholder-[#939393] w-full outline-none"
                 />
-              ) : (
-                <FaRegEyeSlash
-                  color="#FF7837"
-                  onClick={togglePassord}
-                  className="cursor-pointer absolute right-48 top-80"
-                />
-              )}
+                {toggle ? (
+                  <FaRegEye
+                    color="#FF7837"
+                    onClick={togglePassord}
+                    className="cursor-pointer absolute right-4 top-1/2 transform -translate-y-1/2"
+                  />
+                ) : (
+                  <FaRegEyeSlash
+                    color="#FF7837"
+                    onClick={togglePassord}
+                    className="cursor-pointer absolute right-4 top-1/2 transform -translate-y-1/2"
+                  />
+                )}
+              </div>
             </div>
             <span className="text-[#FF7837] hover:underline mt-2 mb-10 flex justify-end text-sm">
               Esqueceu sua senha?
