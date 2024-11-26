@@ -1,4 +1,4 @@
-import Input from "../../../components/Input";
+import Input from "../../../components/InputEntrar";
 
 const Entrar = () => {
     return (
