@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="flex p-6">
         <div>
           <ul className="flex flex-wrap gap-8 mx-10 justify-center text-center lg:flex-row">
-            <li className="mr-10">
+            <li className="lg:mr-10">
               <h4>© 2024 Collaborate, Inc.</h4>
             </li>
             <li className="hover:underline hover:cursor-pointer">
