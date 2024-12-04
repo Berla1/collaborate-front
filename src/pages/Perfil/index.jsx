@@ -41,10 +41,7 @@ const Perfil = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi iste
           placeat architecto veritatis eaque eligendi saepe doloremque
           perspiciatis a aut eveniet reprehenderit laborum autem eos, quas,
-          soluta vero in maiores. Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Voluptas itaque, quod quae iusto maiores repudiandae
-          at ad ex natus et vitae cupiditate eveniet. Quasi rem, magnam
-          obcaecati inventore odio id?
+          soluta vero in maiores. 
         </p>
       </section>
 
