@@ -8,27 +8,27 @@ import Github from "../../assets/footer/icon-github2.svg";
 
 const Footer = () => {
   return (
-    <footer className="flex text-[#939393] border-[#939393] border-t p-6 ">
+    <footer className="flex flex-col text-[#939393] border-[#939393] border-t p-6 lg:flex-row">
       <div className="flex p-6">
         <div>
-          <h4>© 2024 Collaborate, Inc.</h4>
-        </div>
-        <div>
-          <ul className="flex gap-8 mx-10">
+          <ul className="flex flex-wrap gap-8 mx-10 justify-center text-center lg:flex-row">
+            <li className="lg:mr-10">
+              <h4>© 2024 Collaborate, Inc.</h4>
+            </li>
             <li className="hover:underline hover:cursor-pointer">
               O que é o Collaborate?
             </li>
             <li className="hover:underline hover:cursor-pointer">
               Entre em contato
             </li>
+            <li className="hover:underline hover:cursor-pointer">
+              Não compartilhar informações pessoais
+            </li>
+            <li className="hover:underline hover:cursor-pointer">Cookies</li>
           </ul>
         </div>
-        <div className="flex gap-10">
-          <h4>Cookies</h4>
-          <h4>Não compartilhar informações pessoais</h4>
-        </div>
       </div>
-      <div className="flex p-6  ml-auto">
+      <div className="flex p-6 justify-center lg:ml-auto">
         <ul className="flex gap-2 ">
           <li>
             <a href="">

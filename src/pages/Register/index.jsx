@@ -7,7 +7,7 @@ import LogoMenor from "../../assets/login/logo-menor.png";
 import { Link } from "react-router-dom";
 import InputLogin from "../../components/InputLogin";
 
-const Login = () => {
+const Register = () => {
   return (
     <>
       <section className="flex flex-col items-center justify-center h-full py-8 text-white gap-10 lg:h-screen lg:flex-row ">
@@ -18,12 +18,12 @@ const Login = () => {
             Bem vindo ao <span className="text-[#FF7837]">Collaborate</span>
           </h1>
           <h2 className="text-sm text-center lg:text-2xl lg:w-2/5 lg:text-left">
-            Por favor faça o login para acessar sua conta
+            Por favor registre-se para ter acesso ao Collaborate
           </h2>
           <h3 className="mt-6 hidden lg:block">
-            Não tem uma conta?{" "}
-            <Link to={"/register"} className="text-[#FF7837] hover:underline">
-              Registre-se
+            Já tem uma conta?{" "}
+            <Link to={"/login"} className="text-[#FF7837] hover:underline">
+              Entrar
             </Link>
           </h3>
         </div>
@@ -31,11 +31,13 @@ const Login = () => {
         <div>
           <form className="flex flex-col ">
             <h2 className="text-[48px] font-bold mb-5 hidden lg:block">
-              Entrar
+              Registre-se
             </h2>
             <div className="flex flex-col gap-5 ">
+               <InputLogin placeholder={"Insira seu e-mail"} toggleType={"none"}/> 
               <InputLogin placeholder={"Nome de usuário"} toggleType={"none"} />{/* Se quiser o input sem o olho é so colocar o toggleType como 'none'  */}
               <InputLogin placeholder={"Senha"} />
+              <InputLogin placeholder={"Confirmar senha"} />
             </div>
             <span className="text-[#FF7837] hover:underline mt-2 mb-10 flex justify-end text-sm">
               Esqueceu sua senha?
@@ -62,9 +64,9 @@ const Login = () => {
           className="absolute left-[32%] bottom-0 w-[30%] hidden lg:block"
         />
         <h3 className="text-[#939393] lg:hidden">
-          Não tem uma conta?{" "}
-          <Link className="text-[#FF7837] hover:underline" to={"/register"}>
-            Registre-se
+          Já tem uma conta?{" "}
+          <Link className="text-[#FF7837] hover:underline" to={"/login"}>
+            Entrar
           </Link>
         </h3>
       </section>
@@ -72,4 +74,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
