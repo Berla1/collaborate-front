@@ -1,3 +1,5 @@
+import React from "react";
+
 import X from "../../assets/footer/icon-x.svg";
 import Facebook from "../../assets/footer/icon-facebook.svg";
 import Linkedin from "../../assets/footer/icon-linkedin2.svg";
