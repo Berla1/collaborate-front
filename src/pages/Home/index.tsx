@@ -1,3 +1,5 @@
+import React from "react";
+
 import Nav from "../../components/Nav";
 import SobreNos from "../Home/SobreNos";
 import Landing from "../Home/Landing";

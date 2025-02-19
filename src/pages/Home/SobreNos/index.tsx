@@ -1,3 +1,5 @@
+import React from "react";
+
 import Berla from "../../../assets/landing/sobrenos/foto-berla.svg"
 import Vinicius from "../../../assets/landing/sobrenos/foto-vinicius.svg";
 import Linkedin from "../../../assets/landing/sobrenos/icon-linkedin.svg"

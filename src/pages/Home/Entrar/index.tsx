@@ -1,3 +1,5 @@
+import React from "react";
+
 import Input from "../../../components/InputEntrar";
 
 const Entrar = () => {

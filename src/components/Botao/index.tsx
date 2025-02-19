@@ -1,13 +1,13 @@
 import React from "react";
 
-interface IBotaoProps {
+interface IBotao {
   text: string;
   bgColor?: string;
   textColor: string;
   width?: string;
 }
 
-const Botao: React.FC<IBotaoProps> = ({ text, bgColor, textColor, width }) => {
+const Botao: React.FC<IBotao> = ({ text, bgColor, textColor, width }) => {
   return (
     <button
       style={{ backgroundColor: bgColor, color: textColor }}
