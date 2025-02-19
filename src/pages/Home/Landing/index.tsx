@@ -1,3 +1,5 @@
+import React from "react";
+
 import Botao from "../../../components/Botao";
 import Saly from '../../../assets/landing/saly-38.svg'
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";

@@ -1,3 +1,5 @@
+import React from "react";
+
 import Joia from "../../../assets/landing/joia-3d.svg"
 import Play from "../../../assets/landing/play-3d.svg"
 import Chat from "../../../assets/landing/chat-3d.svg"

@@ -1,3 +1,5 @@
+import React from "react";
+
 import Botao from "../../components/Botao";
 import Google from "../../assets/login/redes/google.svg";
 import Facebook from "../../assets/login/redes/facebook.svg";

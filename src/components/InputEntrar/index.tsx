@@ -1,3 +1,5 @@
+import React from "react";
+
 const InputEntrar = () => {
   return (
     <div className="flex items-center bg-[#292524] rounded-full w-fit h-[45px] p-2">

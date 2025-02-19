@@ -1,4 +1,6 @@
-import Zé from "../../assets/perfil/ze-do-caxao.svg";
+import React from "react";
+
+import Ze from "../../assets/perfil/ze-do-caxao.svg";
 
 const CardColaboracoes = () => {
   return (
@@ -7,7 +9,7 @@ const CardColaboracoes = () => {
         <div className="flex gap-3 ">
 
           <div>
-            <img src={Zé} alt="Foto de perfil" className="w-16"/>
+            <img src={Ze} alt="Foto de perfil" className="w-16"/>
           </div>
           <div>
             <h2 className="font-bold text-xl">Nome do carniça</h2>
