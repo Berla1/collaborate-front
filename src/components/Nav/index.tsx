@@ -12,7 +12,7 @@ const Nav = () => {
       </Link>
       <div className="flex gap-3">
         <Link to={'/login'}><Botao text={"Entrar"} textColor={"#FF7837"}/></Link> 
-        <Botao text={"Cadastrar"} bgColor={"#FF7837"} textColor={"white"}/>
+        <Link to={'/register'}>  <Botao text={"Cadastrar"} bgColor={"#FF7837"} textColor={"white"}/></Link>
       </div>
     </nav>
   );
