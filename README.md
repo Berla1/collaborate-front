@@ -32,5 +32,3 @@ A plataforma é ideal para:
 
 ---
 Junte-se ao **Collaborate** e transforme ideias em realidade! 🚀
-
-
